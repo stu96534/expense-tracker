@@ -1,0 +1,53 @@
+<form action="/category" method="GET">
+  <div class="form-group mb-3  mt-5">
+    <select class="form-select fs-3" onchange="form.submit()" id="category_id" name="category_id">
+      <option>Choose...</option>
+      <option value="all" {{#if all}} selected {{/if}}>全部</option>
+      {{#each category}}
+      <option value="{{this._id}}" {{#if this.boolean}} selected {{/if}}>{{this.name}}</option>
+      {{/each}}
+
+    </select>
+  </div>
+</form>
+
+
+<div class="row mt-5">
+  <h5 class="col text-center">總金額:</h5>
+  <div class="col fs-1">
+    <p id="totel">{{totalAmount}}</p>
+  </div>
+</div>
+
+<ul class="list-group">
+
+  {{#each record}}
+  <li class="list-group-item d-flex justify-content-between align-items-center" aria-current="true">
+    <div class="d-flex justify-content-start align-items-center">
+      <i class=" fa-solid {{this.icon}} fa-3x me-3"></i>
+      <div class="col-sm-12">
+        <p class="fs-3">{{this.name}}</p>
+        <h6>{{this.date}}</h6>
+      </div>
+    </div>
+    <div class="price d-flex justify-content-center ">
+      <p class="fs-3 mt-4" id="price">${{this.amount}}</p>
+    </div>
+    <div>
+      
+    <div class="d-flex flex-row">
+      <a href="./expened/{{ this._id }}/edit" type="button" class="btn btn-primary me-3">修改</a>
+      <form action="./expened/{{this._id}}?_method=DELETE" method="POST">
+        <button type="submit" class="btn btn-primary">刪除</button>
+      </form>
+    </div>  
+      
+    </div>
+  </li>
+  {{/each}}
+
+</ul>
+
+<div class="d-flex justify-content-center align-self-center mt-5">
+  <a href="/expened/new" type="button" class="btn btn-primary ">新增支出</a>
+</div>
