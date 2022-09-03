@@ -14,7 +14,7 @@
 
 ## 專案畫面
 
-![首頁](https://github.com/stu96534/restaurant_list/blob/main/public/首頁.png)
+![首頁](https://github.com/stu96534/expense-tracker/blob/main/public/首頁.png)
 
 ## 安裝
 1.開啟終端機(Terminal)cd 到存放專案本機位置並執行:
@@ -63,18 +63,14 @@ npm run dev
  
  ## 新增功能
  ### 註冊(可使用facebook註冊)
- ![註冊](https://github.com/stu96534/restaurant_list/blob/main/public/註冊.png)
+ ![註冊](https://github.com/stu96534/expense-tracker/blob/main/public/註冊.png)
  ### 登入(可使用facebook登入)
- ![登入](https://github.com/stu96534/restaurant_list/blob/main/public/登入.png)
- ### 登出
- ![登出](https://github.com/stu96534/restaurant_list/blob/main/public/登出.png)
+ ![登入](https://github.com/stu96534/expense-tracker/blob/main/public/登入.png)
  ### 新增一筆支出
- ![新增](https://github.com/stu96534/restaurant_list/blob/main/public/新增.png)
- ![新增](https://github.com/stu96534/restaurant_list/blob/main/public/新增2.png)
+ ![新增](https://github.com/stu96534/expense-tracker/blob/main/public/新增.png)
  ### 修改一筆支出
- ![修改](https://github.com/stu96534/restaurant_list/blob/main/public/修改.png)
- ![修改](https://github.com/stu96534/restaurant_list/blob/main/public/修改2.png)
+ ![修改](https://github.com/stu96534/expense-tracker/blob/main/public/修改.png)
  ### 可按Delete，刪除一筆支出
- ![刪除](https://github.com/stu96534/restaurant_list/blob/main/public/刪除.png)
+ ![刪除](https://github.com/stu96534/expense-tracker/blob/main/public/刪除.png)
  ### 可按選單，依類別篩選支出
- ![選單](https://github.com/stu96534/restaurant_list/blob/main/public/排序.png)
+ ![選單](https://github.com/stu96534/expense-tracker/blob/main/public/選單.png)
