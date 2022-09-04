@@ -31,7 +31,7 @@ router.get('/', (req, res) => {
 router.get('/category', (req, res) => {
   const userId = req.user._id
   const categoryId = req.query.category_id
-  console.log(categoryId)
+
   Category.find()
     .lean()
     .sort({ _id: 'asc' })
