@@ -34,14 +34,19 @@ cd expense-tracker
 ```
 npm install
 ```
+4.facebook登入設定:
 
-4.下載種子資料:
+```
+新增.env檔案，將.env.example的內容放進去，自行至FACEBOOK FOR DEVELOPERS網站取得FACEBOOK_ID、FACEBOOK_SECRET的值
+更改.env檔案的FACEBOOK_ID、FACEBOOK_SECRET
+```
+5.下載種子資料:
 
 ```
 npm run seed
 ```
 
-5.啟動程式:
+6.啟動程式:
 
 ```
 npm run dev
@@ -61,7 +66,7 @@ npm run dev
  - connect-flash 版本 0.0.1 - 使用者提示
  - dotenv 版本 8.2.0 - 
  
- ## 新增功能
+ ## 功能介紹
  ### 註冊(可使用facebook註冊)
  ![註冊](https://github.com/stu96534/expense-tracker/blob/main/public/註冊.png)
  ### 登入(可使用facebook登入)
