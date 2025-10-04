@@ -3,7 +3,6 @@
 
 ## 功能介紹
  - 有註冊、登入頁面，需登入才可使用功能
- - 可用FACEBOOK登入
  - 統計所有支出金額
  - 可瀏覽每筆支出
  - 可新增一筆支出
@@ -34,19 +33,14 @@ cd expense-tracker
 ```
 npm install
 ```
-4.facebook登入設定:
 
-```
-新增.env檔案，將.env.example的內容放進去，自行至FACEBOOK FOR DEVELOPERS網站取得FACEBOOK_ID、FACEBOOK_SECRET的值
-更改.env檔案的FACEBOOK_ID、FACEBOOK_SECRET
-```
-5.下載種子資料:
+4.下載種子資料:
 
 ```
 npm run seed
 ```
 
-6.啟動程式:
+5.啟動程式:
 
 ```
 npm run dev
@@ -61,15 +55,14 @@ npm run dev
  - mongoose 版本 5.9.7 -資料庫
  - passport 版本 0.4.1 - 使用者認證
  - passport-local 版本 1.0.0 - 本地策略
- - passport-facebook 版本 3.0.0 - FACEBOOK策略
  - bcrypt 版本 2.4.3 - 雜湊演算法
  - connect-flash 版本 0.0.1 - 使用者提示
  - dotenv 版本 8.2.0 - 
  
  ## 功能介紹
- ### 註冊(可使用facebook註冊)
+ ### 註冊
  ![註冊](https://github.com/stu96534/expense-tracker/blob/main/public/註冊.png)
- ### 登入(可使用facebook登入)
+ ### 登入
  ![登入](https://github.com/stu96534/expense-tracker/blob/main/public/登入.png)
  ### 新增一筆支出
  ![新增](https://github.com/stu96534/expense-tracker/blob/main/public/新增.png)
